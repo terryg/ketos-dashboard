@@ -1,0 +1,27 @@
+%div{:id=>"container-narrow"}
+  %div{:class=>"header"}
+    %h3
+      Ketos App
+  %div{:class=>"jumbotron"}
+    %h1
+      Dashboard
+    %p
+      This web app provides reporting & analytics on the data collected by Ketos Mobile Apps.
+
+  %div{:class=>"container"}
+    %table{:border=>"1"}
+      %tr
+        %th
+          Created On
+        %th
+          Items
+      - @counts.each do |cnt|
+        %tr
+          %td
+            = cnt.created_on
+          %td
+            = cnt.cnts
+
+  %br
+
+  = haml :footer
