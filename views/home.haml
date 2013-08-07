@@ -22,6 +22,16 @@
           %td
             = cnt.cnt
 
+  %div{:class=>"container"}
+    %table{:border=>"1"}
+      %tr
+        %th
+          x
+      - @words.each do |w|
+        %tr
+          %td
+            = w.x
+
   %br
 
   = haml :footer
