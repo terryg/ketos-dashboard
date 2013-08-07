@@ -2,6 +2,6 @@ class Count
   include DataMapper::Resource
 
   property :created_on, Date
-  property :cnts, Integer
+  property :cnt, Integer
 
 end
